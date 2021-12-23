@@ -39,7 +39,7 @@
   },
   "homepage": "./",
   "engines": {
-    "node":"yournodeversion",
-    "npm":"yournpmversion"
+    "node":"v17.2.0",
+    "npm":"8.1.4"
   }
 }
