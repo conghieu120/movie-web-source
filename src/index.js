@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter} from 'react-router-dom'
+
 import './index.css';
+import './grid.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import StoreContext from './store'
+
+document.title = 'Movie Web'
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+      <BrowserRouter>
+
+    <StoreContext>
+        <App />
+    </StoreContext>
+    </BrowserRouter>
+
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,5 +1,4 @@
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +9,206 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media (max-width: 739px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+input:focus{
+  outline: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  width: 100%;
+  height: 52px;
+  background-color: #0d253f;
+  color: #fff;
+  padding: 0 8px !important;
+  margin: auto auto;
+}
+
+.header div { 
+  padding: 6px 0;
+  display: flex;
+}
+.logo {
+  height:40px;  
+  cursor: pointer;
+}
+
+.logo img {
+  margin-top: 6px;
+  height: 70%;
+}
+
+.search {
+  display: flex;
+  flex: 1;
+  margin-left: 52px;
+
+}
+
+.search input {  
+  height: 100%;
+  width: 80%;
+  border-radius: 50px;
+  color: #0d253f;
+  padding: 0 12px;
+  font-size: 16px;
+}
+
+.search img {
+  height: 100%;
+  margin-left: 12px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+  cursor: pointer;
+}
+
+.genres {
+  height: 58px;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.genre a {
+  background-color: #01b4e4;
+  color: #fff;
+  padding: 4px 12px;
+  margin: 8px 12px;
+}
+
+.banner {
+  background-image: url('https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/jTiQAusGG4dVLSb1WHme9I9R4NN.jpg');
+  min-height: 300px;
+  max-height: 360px;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  padding: 30px 40px; 
+}
+
+.gallery h3 {
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.item {
+  margin-bottom: 12px;
+}
+
+.item-img {
+  width: 100%;
+  height: 85%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.item img {
+  width: 110%;
+  height: auto;
+}
+
+.item p {
+  padding: 4px;
+  text-align: center;
+}
+
+.footer{
+  padding: 32px 0 !important;
+  background-color: #0d253f;
+  color: #fff;
+}
+
+.footer h3 {
+  margin-top: 12px;
+}
+
+.footer img {
+  width: 50%;
+  border-radius: 12px;
+}
+
+.movie-header {
+ margin: 24px 0;
+}
+
+.movie-header img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.content h2 {
+  text-align: center;
+}
+
+.content h2 + p {
+  text-align: center;
+}
+
+.content p {
+  margin: 8px 0;
+  line-height: 24px;
+}
+
+.play-movie {
+  margin: 12px auto;
+  text-align: center;
+}
+
+.play-movie a {
+  background-color: #01b4e4;
+  border-radius: 12px;
+  padding: 8px 16px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.actor-item img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.actor-item p {
+  text-align: center;
+}
+
+.actor-item {
+  flex-wrap: nowrap !important;
+  overflow: scroll;
+}
+
+.backdrop img {
+  width: 100%;
+  height: auto;
 }
